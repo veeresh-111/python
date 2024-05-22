@@ -73,4 +73,34 @@ my_var = os.getenv('MY_VARIABLE', 'default_value')
 print(f"MY_VARIABLE: {my_var}")
 ```
 
-Note: The getenv method takes two arguments: the name of the environment variable and an optional default value if the environment variable is not found.
+  Note: The getenv method takes two arguments: the name of the environment variable and an optional default value if the environment variable is not found.
+
+
+## dotenv Module
+
+The dotenv module in Python is used to manage environment variables from a .env file. This is especially useful for managing configuration settings and secrets (like API keys) in a project.
+
+Why Use dotenv?
+ Security: Keeps sensitive information out of your codebase.
+ Convenience: Makes it easy to manage environment-specific configurations.
+ Portability: Simplifies the setup of different environments (development, testing, production).
+
+
+Installing dotenv
+To use the dotenv module, you need to install the python-dotenv package.
+
+```shell
+pip install python-dotenv
+```
+
+Create a .env file:
+
+Create a file named .env in the root directory of your project and add your environment variables to it.
+
+Example .env file:
+
+```make
+DATABASE_URL=postgres://user:password@localhost/dbname
+SECRET_KEY=supersecretkey
+DEBUG=True
+```
