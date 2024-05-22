@@ -98,7 +98,7 @@ my_project/
 
 
 
-# Create a .env file:
+**Create a .env file:**
 Create a file named .env in the root directory of your project and add your environment variables to it.
 
 **Example .env file:**
@@ -108,7 +108,7 @@ SECRET_KEY=supersecretkey
 DEBUG=True
 ```
 
-# Load Environment Variables in Your Python Script:
+**Load Environment Variables in Your Python Script:**
 
 ```python
 from dotenv import load_dotenv
@@ -131,6 +131,7 @@ python-dotenv
 ```
 
 
-# Summary
+**Summary:**
+
  dotenv Module: Manages environment variables from a .env file.
  Usage: Create a .env file, load it in your script using load_dotenv(), and access variables using os.getenv().
