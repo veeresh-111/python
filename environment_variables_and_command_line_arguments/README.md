@@ -36,3 +36,17 @@ First Argument: Hello
 Second Argument: World
 ```
 
+
+##Environment Variables
+Environment variables are dynamic values that affect the way running processes behave on a computer. They can be used to configure the behavior of applications and scripts.
+
+How to Set Environment Variables
+Environment variables can be set in the operating system and accessed within your Python script.
+
+**Setting Environment Variables (on Windows):**
+
+```shell
+set MY_VARIABLE=some_value
+```
+
+
