@@ -37,7 +37,10 @@ Second Argument: World
 ```
 
 
-##Environment Variables
+
+
+## Environment Variables
+
 Environment variables are dynamic values that affect the way running processes behave on a computer. They can be used to configure the behavior of applications and scripts.
 
 How to Set Environment Variables
@@ -49,4 +52,25 @@ Environment variables can be set in the operating system and accessed within you
 set MY_VARIABLE=some_value
 ```
 
+**Setting Environment Variables (on macOS/Linux):**
 
+```shell
+export MY_VARIABLE=some_value
+```
+
+Accessing Environment Variables in Python
+Use the os module to access environment variables.
+
+**Example:**
+
+```python
+
+import os
+
+# Access an environment variable
+my_var = os.getenv('MY_VARIABLE', 'default_value')
+
+print(f"MY_VARIABLE: {my_var}")
+```
+
+Note: The getenv method takes two arguments: the name of the environment variable and an optional default value if the environment variable is not found.
