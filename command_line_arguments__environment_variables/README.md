@@ -86,21 +86,50 @@ Why Use dotenv?
  Portability: Simplifies the setup of different environments (development, testing, production).
 
 
-Installing dotenv
-To use the dotenv module, you need to install the python-dotenv package.
+**Example Project Structure:**
 
 ```shell
-pip install python-dotenv
+my_project/
+│
+├── .env
+├── app.py
+└── requirements.txt
 ```
 
-Create a .env file:
 
+
+# Create a .env file:
 Create a file named .env in the root directory of your project and add your environment variables to it.
 
-Example .env file:
-
+**Example .env file:**
 ```make
 DATABASE_URL=postgres://user:password@localhost/dbname
 SECRET_KEY=supersecretkey
 DEBUG=True
 ```
+
+# Load Environment Variables in Your Python Script:
+
+```python
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+database_url = os.getenv('DATABASE_URL')
+secret_key = os.getenv('SECRET_KEY')
+debug = os.getenv('DEBUG').lower() in ('true', '1', 't')
+
+print(f"Database URL: {database_url}")
+print(f"Secret Key: {secret_key}")
+print(f"Debug Mode: {debug}")
+```
+
+**Example requirements.txt file:**
+```text
+python-dotenv
+```
+
+#Summary
+dotenv Module: Manages environment variables from a .env file.
+Usage: Create a .env file, load it in your script using load_dotenv(), and access variables using os.getenv().
