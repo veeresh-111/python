@@ -131,7 +131,9 @@ python-dotenv
 ```
 
 
+
 **Summary:**
 
- dotenv Module: Manages environment variables from a .env file.
- Usage: Create a .env file, load it in your script using load_dotenv(), and access variables using os.getenv().
+  dotenv Module: Manages environment variables from a .env file.
+  
+  Usage: Create a .env file, load it in your script using load_dotenv(), and access variables using os.getenv().
