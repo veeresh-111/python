@@ -1,6 +1,6 @@
 import os
 
-def create_file(filename):
+def write_file(filename):
 	try:
 		with open(filename, 'w') as f:
 			f.write('Hello, world!\n')
