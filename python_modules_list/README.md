@@ -389,7 +389,7 @@ for container in client.containers.list():
 ```
 
 # kubernetes module (requires kubernetes package)
-```
+```python
 from kubernetes import client, config
 
 # Load Kubernetes configuration
@@ -401,7 +401,7 @@ for pod in v1.list_pod_for_all_namespaces(watch=False).items:
 ```
 
 # jinja2 module (requires jinja2 package)
-```
+``` python
 from jinja2 import Template
 
 # Render a template
@@ -411,7 +411,7 @@ print(output)
 ```
 
 # dnspython module (requires dnspython package)
-```
+``` python
 import dns.resolver
 
 # Resolve a DNS query
@@ -421,7 +421,7 @@ for ipval in result:
 ```
 
 # paramiko module for SFTP (requires paramiko package)
-```
+``` python
 import paramiko
 
 # Connect to an SFTP server
@@ -494,7 +494,7 @@ print(html)
 
 
 # flask module (requires flask package)
-```
+```python
 from flask import Flask
 
 app = Flask(__name__)
